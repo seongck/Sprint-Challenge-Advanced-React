@@ -1,5 +1,6 @@
 import React from 'react';
 import './App.css';
+import Navbar from './components/Navbar';
 import PlayerList from './components/PlayerList';
 
 class App extends React.Component {
@@ -20,9 +21,7 @@ class App extends React.Component {
   render() {
     return (
       <div className="App">
-        <header>
-          <h1>Women's World Cup June-July 2019</h1>
-        </header>
+        <Navbar />
         <PlayerList players={this.state.data} />
       </div>
     );
