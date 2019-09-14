@@ -1,5 +1,6 @@
 import React from 'react';
 import './App.css';
+import PlayerList from './components/PlayerList';
 
 class App extends React.Component {
   constructor() {
@@ -22,6 +23,7 @@ class App extends React.Component {
         <header>
           <h1>Women's World Cup June-July 2019</h1>
         </header>
+        <PlayerList />
       </div>
     );
   }
