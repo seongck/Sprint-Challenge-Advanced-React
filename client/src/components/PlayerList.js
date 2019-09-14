@@ -1,9 +1,16 @@
 import React from 'react';
 import Player from './Player';
 
-function PlayerList() {
+function PlayerList({ players }) {
   return (
-    <Player />
+    players.map( player => (
+      <Player 
+        key={player.id} 
+        name={player.name} 
+        country={player.country}
+        searches={player.searches}
+      />
+    )) 
   );
 }
 

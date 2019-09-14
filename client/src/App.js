@@ -23,7 +23,7 @@ class App extends React.Component {
         <header>
           <h1>Women's World Cup June-July 2019</h1>
         </header>
-        <PlayerList />
+        <PlayerList players={this.state.data} />
       </div>
     );
   }
